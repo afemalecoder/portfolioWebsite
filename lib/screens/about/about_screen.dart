@@ -46,17 +46,14 @@ class _AboutScreenState extends State<AboutScreen> {
                             height: 40,
                           ),
                           MyIntroduction(
-                            label: 'Hello, my name is Matilda',
+                            label: 'A little more about me',
                           ),
                           MyPhoto(),
-                          Text(
-                            'Here I will write something short about me',
-                            style: GoogleFonts.anonymousPro(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
+                          SubLabel(
+                              label:
+                                  '''I\'m Matilda, Flutter Developer based in Sweden, Malmo. 
+                                  \nI have a passion for problem-solving and recently got into App Development. I am now pursuing my passion and am working towards becoming a full-time Flutter Developer whilst studying. 
+                                  \nIn my free time, I like to create content for my social media accounts to help educate others about Flutter and everything around being a woman in STEM. I love to interact with people which led me to start a Twitch channel where I help others to focus, stay motivated and beat procrastination with co-working/study streams. '''),
                           SizedBox(
                             height: 200,
                           ),
@@ -68,13 +65,18 @@ class _AboutScreenState extends State<AboutScreen> {
                             height: 40,
                           ),
                           MyIntroduction(
-                            label: 'Hello, my name is Matildaa',
+                            label: 'A little more about me',
                           ),
                           Image.asset(
                             'MyPhoto.jpg',
                             height: 300,
                             width: 300,
                           ),
+                          SubLabel(
+                              label:
+                                  '''I\'m Matilda, Flutter Developer based in Sweden, Malmo. 
+                                  \nI have a passion for problem-solving and recently got into App Development. I am now pursuing my passion and am working towards becoming a full-time Flutter Developer whilst studying. 
+                                  \nIn my free time, I like to create content for my social media accounts to help educate others about Flutter and everything around being a woman in STEM. I love to interact with people which led me to start a Twitch channel where I help others to focus, stay motivated and beat procrastination with co-working/study streams. '''),
                           SizedBox(
                             height: 40,
                           ),

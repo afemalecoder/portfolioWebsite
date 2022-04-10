@@ -48,7 +48,9 @@ class _ContactScreenState extends State<ContactScreen> {
                           SizedBox(
                             height: 40,
                           ),
-                          MyIntroduction(label: 'Get In Touch'),
+                          MyIntroduction(
+                            label: 'Get In Touch',
+                          ),
                           SizedBox(
                             height: 200,
                           ),
@@ -60,7 +62,7 @@ class _ContactScreenState extends State<ContactScreen> {
                             height: 40,
                           ),
                           MyIntroduction(
-                            label: 'Hello, my name is Matildaa',
+                            label: 'Hello, my name is Matilda',
                           ),
                           Image.asset(
                             'MyPhoto.jpg',
