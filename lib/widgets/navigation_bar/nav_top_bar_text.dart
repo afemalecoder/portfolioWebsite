@@ -6,7 +6,7 @@ class NavTopBarText extends StatelessWidget {
 
   const NavTopBarText(
     this.title, {
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

@@ -9,7 +9,7 @@ class MyLogo extends StatelessWidget {
         child: Image.asset(
           'myLogo.jpg',
           height: 100,
-          width: 250,
+          width: 204,
         ),
       ),
     );

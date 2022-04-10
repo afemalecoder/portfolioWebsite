@@ -4,7 +4,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 class CenterTheView extends StatelessWidget {
   final Widget child;
 
-  const CenterTheView({Key key, this.child}) : super(key: key);
+  const CenterTheView({Key? key, required this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
