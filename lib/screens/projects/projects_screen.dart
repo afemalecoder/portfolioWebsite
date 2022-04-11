@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../widgets/center_the_view.dart';
 import '../../widgets/drawer/portfolio_drawer.dart';
 import '../../widgets/my_introduction.dart';
-import '../../widgets/my_photo.dart';
 import '../../widgets/navigation_bar/navigation_top_bar.dart';
 import '../home/background.dart';
+import 'my_projetcts.dart';
 
 class ProjectsScreen extends StatefulWidget {
   static const routeName = '/projects';
@@ -47,8 +46,25 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           SizedBox(
                             height: 40,
                           ),
+                          MyIntroduction(
+                            label:
+                                'Here are some projects that I have worked on',
+                          ),
                           SizedBox(
-                            height: 200,
+                            height: 40,
+                          ),
+                          MyProjectDesktop(
+                            url:
+                                'https://github.com/afemalecoder/affirmationgratitude',
+                            image: 'AffirmationGratitude.png',
+                          ),
+                          SizedBox(
+                            height: 40,
+                          ),
+                          MyProjectDesktop(
+                            url:
+                                'https://github.com/afemalecoder/portfolioWebsite',
+                            image: 'portfolioImage.png',
                           ),
                         ],
                       ),
@@ -57,8 +73,24 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           SizedBox(
                             height: 40,
                           ),
+                          MyIntroduction(
+                            label:
+                                'Here are some projects that I have worked on',
+                          ),
                           SizedBox(
                             height: 40,
+                          ),
+                          MyProjectMobile(
+                              url:
+                                  'https://github.com/afemalecoder/affirmationgratitude',
+                              image: 'AffirmationGratitude.png'),
+                          SizedBox(
+                            height: 40,
+                          ),
+                          MyProjectMobile(
+                            url:
+                                'https://github.com/afemalecoder/portfolioWebsite',
+                            image: 'portfolioImage.png',
                           ),
                         ],
                       ),
