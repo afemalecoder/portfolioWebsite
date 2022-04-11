@@ -56,7 +56,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           MyProjectDesktop(
                             url:
                                 'https://github.com/afemalecoder/affirmationgratitude',
-                            image: 'AffirmationGratitude.png',
+                            image: "images/AffirmationGratitude.png",
                           ),
                           SizedBox(
                             height: 40,
@@ -64,7 +64,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           MyProjectDesktop(
                             url:
                                 'https://github.com/afemalecoder/portfolioWebsite',
-                            image: 'portfolioImage.png',
+                            image: 'images/portfolioImage.png',
                           ),
                         ],
                       ),
@@ -83,14 +83,14 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           MyProjectMobile(
                               url:
                                   'https://github.com/afemalecoder/affirmationgratitude',
-                              image: 'AffirmationGratitude.png'),
+                              image: 'images/AffirmationGratitude.png'),
                           SizedBox(
                             height: 40,
                           ),
                           MyProjectMobile(
                             url:
                                 'https://github.com/afemalecoder/portfolioWebsite',
-                            image: 'portfolioImage.png',
+                            image: 'images/portfolioImage.png',
                           ),
                         ],
                       ),

@@ -7,7 +7,7 @@ class MyPhoto extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Image.asset(
-        'MyPhoto.jpg',
+        'images/MyPhoto.jpg',
         height: 500,
         width: 500,
       ),
