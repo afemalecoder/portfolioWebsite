@@ -14,7 +14,7 @@ class NavTopBarText extends StatelessWidget {
     return Text(
       title,
       style: GoogleFonts.anonymousPro(
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: FontWeight.bold,
         color: Colors.white,
       ),
