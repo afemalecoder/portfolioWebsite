@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/widgets/drawer/drawer_header.dart';
-import 'package:portfolio_website/widgets/drawer/items_colum.dart';
+
+import 'drawer_items_list.dart';
 
 class PortfolioDrawer extends StatelessWidget {
   const PortfolioDrawer({Key? key}) : super(key: key);
@@ -42,7 +43,38 @@ class _NavbarMenuState extends State<NavbarMenu> {
         children: [
           DrawersHeader(),
           SizedBox(height: 20),
-          ItemsColum(),
+          ListTile(
+            title: DrawerItemList(
+              label: "Home",
+              onTap: () {
+                Navigator.pushNamed(context, '/home');
+              },
+            ),
+          ),
+          ListTile(
+            title: DrawerItemList(
+              label: "About",
+              onTap: () {
+                Navigator.pushNamed(context, '/about');
+              },
+            ),
+          ),
+          ListTile(
+            title: DrawerItemList(
+              label: "Projects",
+              onTap: () {
+                Navigator.pushNamed(context, '/projects');
+              },
+            ),
+          ),
+          ListTile(
+            title: DrawerItemList(
+              label: "Contact",
+              onTap: () {
+                Navigator.pushNamed(context, '/contact');
+              },
+            ),
+          ),
         ],
       ),
     );
