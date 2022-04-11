@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/widgets/drawer/portfolio_drawer.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -19,6 +18,12 @@ class _AboutScreenState extends State<AboutScreen> {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
+    final String label = 'A little more about me';
+    final String subLabel =
+        '''I\'m Matilda, Flutter Developer based in Sweden, Malmo. 
+\nI have a passion for problem-solving and recently got into App Development. I am now pursuing my passion and am working towards becoming a full-time Flutter Developer whilst studying. 
+ \nIn my free time, I like to create content for my social media accounts to help educate others about Flutter and everything around being a woman in STEM. I love to interact with people which led me to start a Twitch channel where I help others to focus, stay motivated and beat procrastination with co-working/study streams. ''';
+
     return ResponsiveBuilder(
       builder: (context, sizingInfo) => Scaffold(
         drawer: sizingInfo.deviceScreenType == DeviceScreenType.mobile
@@ -46,14 +51,12 @@ class _AboutScreenState extends State<AboutScreen> {
                             height: 40,
                           ),
                           MyIntroduction(
-                            label: 'A little more about me',
+                            label: label,
                           ),
                           MyPhoto(),
                           SubLabel(
-                              label:
-                                  '''I\'m Matilda, Flutter Developer based in Sweden, Malmo. 
-                                  \nI have a passion for problem-solving and recently got into App Development. I am now pursuing my passion and am working towards becoming a full-time Flutter Developer whilst studying. 
-                                  \nIn my free time, I like to create content for my social media accounts to help educate others about Flutter and everything around being a woman in STEM. I love to interact with people which led me to start a Twitch channel where I help others to focus, stay motivated and beat procrastination with co-working/study streams. '''),
+                            label: subLabel,
+                          ),
                           SizedBox(
                             height: 200,
                           ),
@@ -65,7 +68,7 @@ class _AboutScreenState extends State<AboutScreen> {
                             height: 40,
                           ),
                           MyIntroduction(
-                            label: 'A little more about me',
+                            label: label,
                           ),
                           Image.asset(
                             'MyPhoto.jpg',
@@ -73,10 +76,8 @@ class _AboutScreenState extends State<AboutScreen> {
                             width: 300,
                           ),
                           SubLabel(
-                              label:
-                                  '''I\'m Matilda, Flutter Developer based in Sweden, Malmo. 
-                                  \nI have a passion for problem-solving and recently got into App Development. I am now pursuing my passion and am working towards becoming a full-time Flutter Developer whilst studying. 
-                                  \nIn my free time, I like to create content for my social media accounts to help educate others about Flutter and everything around being a woman in STEM. I love to interact with people which led me to start a Twitch channel where I help others to focus, stay motivated and beat procrastination with co-working/study streams. '''),
+                            label: subLabel,
+                          ),
                           SizedBox(
                             height: 40,
                           ),

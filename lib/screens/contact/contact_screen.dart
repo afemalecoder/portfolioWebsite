@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../widgets/center_the_view.dart';
 import '../../widgets/drawer/portfolio_drawer.dart';
@@ -51,6 +52,41 @@ class _ContactScreenState extends State<ContactScreen> {
                           MyIntroduction(
                             label: 'Get In Touch',
                           ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              InkWell(
+                                onTap: () async {
+                                  await launch(
+                                      'https://github.com/afemalecoder/');
+                                }, // Image tapped
+                                splashColor: Colors.white10,
+                                child: Ink.image(
+                                  fit: BoxFit.cover,
+                                  width: 100,
+                                  height: 100,
+                                  image: AssetImage(
+                                    'iconGithub.jpg',
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () async {
+                                  await launch(
+                                      'https://instagram.com/afemalecoder/');
+                                }, // Image tapped
+                                splashColor: Colors.white10,
+                                child: Ink.image(
+                                  fit: BoxFit.cover,
+                                  width: 100,
+                                  height: 100,
+                                  image: AssetImage(
+                                    'iconInsta.jpg',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                           SizedBox(
                             height: 200,
                           ),
@@ -62,15 +98,45 @@ class _ContactScreenState extends State<ContactScreen> {
                             height: 40,
                           ),
                           MyIntroduction(
-                            label: 'Hello, my name is Matilda',
-                          ),
-                          Image.asset(
-                            'MyPhoto.jpg',
-                            height: 300,
-                            width: 300,
+                            label: 'Get In Touch',
                           ),
                           SizedBox(
                             height: 40,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              InkWell(
+                                onTap: () async {
+                                  await launch(
+                                      'https://github.com/afemalecoder/');
+                                }, // Image tapped
+                                splashColor: Colors.white10,
+                                child: Ink.image(
+                                  fit: BoxFit.cover,
+                                  width: 50,
+                                  height: 50,
+                                  image: AssetImage(
+                                    'iconGithub.jpg',
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () async {
+                                  await launch(
+                                      'https://instagram.com/afemalecoder/');
+                                }, // Image tapped
+                                splashColor: Colors.white10,
+                                child: Ink.image(
+                                  fit: BoxFit.cover,
+                                  width: 50,
+                                  height: 50,
+                                  image: AssetImage(
+                                    'iconInsta.jpg',
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
