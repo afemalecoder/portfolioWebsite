@@ -13,7 +13,7 @@ class CenterTheView extends StatelessWidget {
         double paddingVertical =
             sizingInfo.deviceScreenType == DeviceScreenType.desktop ? 40 : 10;
         double paddingHorizontal =
-            sizingInfo.deviceScreenType == DeviceScreenType.desktop ? 60 : 30;
+            sizingInfo.deviceScreenType == DeviceScreenType.desktop ? 60 : 15;
         return Padding(
           padding: EdgeInsets.symmetric(
               vertical: paddingVertical, horizontal: paddingHorizontal),
