@@ -23,7 +23,7 @@ class DrawerItemList extends StatelessWidget {
             flex: 5,
             child: PortfolioContainer(
               onTap: onTap,
-              color: Colors.blueGrey,
+              color: Color.fromARGB(255, 16, 120, 189),
               withShadow: true,
               horizontalMargin: 4,
               verticalMargin: 4,
@@ -32,6 +32,7 @@ class DrawerItemList extends StatelessWidget {
                 style: GoogleFonts.anonymousPro(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ),
