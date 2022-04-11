@@ -32,6 +32,7 @@ dependencies:
   responsive_builder: ^0.4.2
   provider: ^6.0.2
   url_launcher: ^6.0.20
+  font_awesome_flutter: ^10.1.0
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +59,8 @@ assets:
      - images/iconGithub.jpg
      - images/iconYoutube.jpg
      - images/iconLinkedIn.jpg
+     - images/AffirmationGratitude.png
+     - images/portfolioImage.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
