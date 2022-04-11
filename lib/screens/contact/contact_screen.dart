@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio_website/screens/contact/social_media_button.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../widgets/center_the_view.dart';
 import '../../widgets/drawer/portfolio_drawer.dart';
 import '../../widgets/my_introduction.dart';
-import '../../widgets/my_photo.dart';
 import '../../widgets/navigation_bar/navigation_top_bar.dart';
 import '../home/background.dart';
 
@@ -46,44 +45,46 @@ class _ContactScreenState extends State<ContactScreen> {
                     ScreenTypeLayout(
                       desktop: Column(
                         children: [
-                          SizedBox(
-                            height: 40,
-                          ),
                           MyIntroduction(
                             label: 'Get In Touch',
                           ),
-                          Row(
+                          SizedBox(
+                            height: 50,
+                          ),
+                          Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              InkWell(
-                                onTap: () async {
-                                  await launch(
-                                      'https://github.com/afemalecoder/');
-                                }, // Image tapped
-                                splashColor: Colors.white10,
-                                child: Ink.image(
-                                  fit: BoxFit.cover,
-                                  width: 100,
-                                  height: 100,
-                                  image: AssetImage(
-                                    'iconGithub.jpg',
-                                  ),
-                                ),
+                              SocialButton(
+                                url: 'https://github.com/afemalecoder',
+                                icon: FontAwesomeIcons.github,
+                                label: "GitHub profile",
                               ),
-                              InkWell(
-                                onTap: () async {
-                                  await launch(
-                                      'https://instagram.com/afemalecoder/');
-                                }, // Image tapped
-                                splashColor: Colors.white10,
-                                child: Ink.image(
-                                  fit: BoxFit.cover,
-                                  width: 100,
-                                  height: 100,
-                                  image: AssetImage(
-                                    'iconInsta.jpg',
-                                  ),
-                                ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              SocialButton(
+                                url: 'https://instagram.com/afemalecoder',
+                                icon: FontAwesomeIcons.instagram,
+                                // iconColor: Colors.black,
+                                label: "Instagram profile",
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              SocialButton(
+                                url: 'https://theselfdev.com/',
+                                icon: FontAwesomeIcons.dev,
+                                // iconColor: Colors.black,
+                                label: "Self.dev",
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              SocialButton(
+                                url: 'https://www.twitch.tv/afemalecoder/',
+                                icon: FontAwesomeIcons.twitch,
+                                // iconColor: Colors.black,
+                                label: "Twitch profile",
                               ),
                             ],
                           ),
@@ -103,38 +104,39 @@ class _ContactScreenState extends State<ContactScreen> {
                           SizedBox(
                             height: 40,
                           ),
-                          Row(
+                          Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              InkWell(
-                                onTap: () async {
-                                  await launch(
-                                      'https://github.com/afemalecoder/');
-                                }, // Image tapped
-                                splashColor: Colors.white10,
-                                child: Ink.image(
-                                  fit: BoxFit.cover,
-                                  width: 50,
-                                  height: 50,
-                                  image: AssetImage(
-                                    'iconGithub.jpg',
-                                  ),
-                                ),
+                              SocialButton(
+                                url: 'https://github.com/afemalecoder',
+                                icon: FontAwesomeIcons.github,
+                                label: "GitHub profile",
                               ),
-                              InkWell(
-                                onTap: () async {
-                                  await launch(
-                                      'https://instagram.com/afemalecoder/');
-                                }, // Image tapped
-                                splashColor: Colors.white10,
-                                child: Ink.image(
-                                  fit: BoxFit.cover,
-                                  width: 50,
-                                  height: 50,
-                                  image: AssetImage(
-                                    'iconInsta.jpg',
-                                  ),
-                                ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              SocialButton(
+                                url: 'https://instagram.com/afemalecoder',
+                                icon: FontAwesomeIcons.instagram,
+                                label: "Instagram profile",
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              SocialButton(
+                                url: 'https://theselfdev.com/',
+                                icon: FontAwesomeIcons.dev,
+                                // iconColor: Colors.black,
+                                label: "Self.dev",
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              SocialButton(
+                                url: 'https://www.twitch.tv/afemalecoder/',
+                                icon: FontAwesomeIcons.twitch,
+                                // iconColor: Colors.black,
+                                label: "Twitch profile",
                               ),
                             ],
                           ),
