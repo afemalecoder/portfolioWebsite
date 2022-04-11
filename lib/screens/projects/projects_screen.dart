@@ -56,7 +56,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           MyProjectDesktop(
                             url:
                                 'https://github.com/afemalecoder/affirmationgratitude',
-                            image: "images/AffirmationGratitude.png",
+                            image: 'images/AffirmationGratitude.png',
                           ),
                           SizedBox(
                             height: 40,
