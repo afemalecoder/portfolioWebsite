@@ -71,7 +71,7 @@ class _AboutScreenState extends State<AboutScreen> {
                             label: label,
                           ),
                           Image.asset(
-                            'MyPhoto.jpg',
+                            'assets/images/MyPhoto.jpg',
                             height: 300,
                             width: 300,
                           ),

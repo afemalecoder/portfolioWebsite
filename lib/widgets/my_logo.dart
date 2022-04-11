@@ -7,7 +7,7 @@ class MyLogo extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Image.asset(
-          'images/myLogo.jpg',
+          'assets/images/myLogo.jpg',
           height: 100,
           width: 204,
         ),

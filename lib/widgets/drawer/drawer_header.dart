@@ -8,7 +8,7 @@ class DrawersHeader extends StatelessWidget {
     return Container(
       child: DrawerHeader(
         child: Image.asset(
-          'myLogo.jpg',
+          'assets/images/myLogo.jpg',
           scale: 3,
         ),
         decoration: BoxDecoration(

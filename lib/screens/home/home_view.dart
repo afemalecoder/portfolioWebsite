@@ -63,7 +63,7 @@ class _HomeViewState extends State<HomeView> {
                             label: 'Hello, my name is Matilda',
                           ),
                           Image.asset(
-                            'MyPhoto.jpg',
+                            'assets/images/MyPhoto.jpg',
                             height: 300,
                             width: 300,
                           ),
