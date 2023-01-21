@@ -52,7 +52,7 @@ class _HomeViewState extends State<HomeView> {
                             height: 40,
                           ),
                           MyIntroduction(
-                            label: 'Hello, my name is Matilda',
+                            label: label,
                           ),
                           MyPhoto(),
                           SubLabel(

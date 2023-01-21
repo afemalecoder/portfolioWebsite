@@ -39,6 +39,7 @@ class _NavbarMenuState extends State<NavbarMenu> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Color(0xff150941),
       child: ListView(
         children: [
           DrawersHeader(),

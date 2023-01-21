@@ -22,6 +22,7 @@ class _ContactScreenState extends State<ContactScreen> {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
+
     return ResponsiveBuilder(
       builder: (context, sizingInfo) => Scaffold(
         drawer: sizingInfo.deviceScreenType == DeviceScreenType.mobile
