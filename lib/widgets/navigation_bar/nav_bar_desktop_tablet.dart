@@ -27,10 +27,6 @@ class NavBarDesktopTablet extends StatelessWidget {
                   child: NavTopBarText('Home'),
                 ),
                 TextButton(
-                  onPressed: () => Navigator.pushNamed(context, '/about'),
-                  child: NavTopBarText('About'),
-                ),
-                TextButton(
                   onPressed: () => Navigator.pushNamed(context, '/projects'),
                   child: NavTopBarText('Projects'),
                 ),

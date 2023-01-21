@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:portfolio_website/core/helpers/layout_helper.dart';
-import 'package:portfolio_website/screens/about/about_screen.dart';
 import 'package:portfolio_website/screens/contact/contact_screen.dart';
 import 'package:portfolio_website/screens/home/home_view.dart';
 import 'package:portfolio_website/screens/projects/projects_screen.dart';
@@ -32,7 +31,6 @@ class MatildasPortfolioWeb extends StatelessWidget {
       home: HomeView(),
       routes: {
         HomeView.routeName: (context) => HomeView(),
-        AboutScreen.routeName: (context) => AboutScreen(),
         ContactScreen.routeName: (context) => ContactScreen(),
         ProjectsScreen.routeName: (context) => ProjectsScreen(),
       },

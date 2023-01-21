@@ -7,10 +7,6 @@ List<DrawerItemModel> drawerItems = <DrawerItemModel>[
     screen: Screen.home,
   ),
   DrawerItemModel(
-    label: 'About',
-    screen: Screen.about,
-  ),
-  DrawerItemModel(
     label: 'Projects',
     screen: Screen.projects,
   ),

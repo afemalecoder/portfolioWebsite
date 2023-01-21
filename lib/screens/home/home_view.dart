@@ -19,6 +19,12 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
+    final String label = 'A little more about me';
+    final String subLabel =
+        '''I\'m Matilda, an App Developer based in Denmark, Copenhagen. 
+\nI have a passion for problem-solving and recently got into App Development. I am now pursuing my passion and am working towards becoming a full-time App Developer whilst studying at Malmö Yrkeshögskola. 
+ \nIn my free time, I like to create content for my social media accounts to help educate others about mobile development and everything around being a woman in STEM. I love to interact with people which led me to start a Twitch channel where I help others to focus, stay motivated and beat procrastination with co-working/study streams. ''';
+
     return ResponsiveBuilder(
       builder: (context, sizingInfo) => Scaffold(
         drawer: sizingInfo.deviceScreenType == DeviceScreenType.mobile
@@ -49,6 +55,9 @@ class _HomeViewState extends State<HomeView> {
                             label: 'Hello, my name is Matilda',
                           ),
                           MyPhoto(),
+                          SubLabel(
+                            label: subLabel,
+                          ),
                           SizedBox(
                             height: 200,
                           ),
@@ -66,6 +75,12 @@ class _HomeViewState extends State<HomeView> {
                             'assets/images/MyPhoto.jpg',
                             height: 300,
                             width: 300,
+                          ),
+                          SubLabel(
+                            label: subLabel,
+                          ),
+                          SizedBox(
+                            height: 40,
                           ),
                         ],
                       ),

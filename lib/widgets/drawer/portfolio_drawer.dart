@@ -53,14 +53,6 @@ class _NavbarMenuState extends State<NavbarMenu> {
           ),
           ListTile(
             title: DrawerItemList(
-              label: "About",
-              onTap: () {
-                Navigator.pushNamed(context, '/about');
-              },
-            ),
-          ),
-          ListTile(
-            title: DrawerItemList(
               label: "Projects",
               onTap: () {
                 Navigator.pushNamed(context, '/projects');

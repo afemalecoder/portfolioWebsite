@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_website/screens/about/about_screen.dart';
+import 'package:portfolio_website/screens/contact/contact_screen.dart';
 import 'package:portfolio_website/screens/home/home_view.dart';
 
 enum Screen {
   home,
-  about,
   projects,
   contact,
 }
@@ -23,7 +22,7 @@ class LayoutHelper with ChangeNotifier {
     if (screen == Screen.home) {
       return HomeView();
     } else {
-      return AboutScreen();
+      return ContactScreen();
     }
   }
 }
