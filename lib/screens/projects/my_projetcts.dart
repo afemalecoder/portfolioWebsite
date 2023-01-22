@@ -46,8 +46,8 @@ class MyProjectDesktop extends StatelessWidget {
       }, // Image tapped
       splashColor: Colors.white10,
       child: Ink.image(
-        fit: BoxFit.cover,
-        width: 500,
+        fit: BoxFit.contain,
+        width: 200,
         height: 500,
         image: AssetImage(
           image,

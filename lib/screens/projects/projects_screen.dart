@@ -53,10 +53,29 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           SizedBox(
                             height: 40,
                           ),
-                          MyProjectDesktop(
-                            url:
-                                'https://github.com/afemalecoder/affirmationgratitude',
-                            image: 'assets/images/AffirmationGratitude.png',
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: [
+                              MyProjectDesktop(
+                                url:
+                                    'https://github.com/afemalecoder/affirmationgratitude',
+                                image:
+                                    'assets/images/affirmation/HomeScreenDark.png',
+                              ),
+                              MyProjectDesktop(
+                                url:
+                                    'https://github.com/afemalecoder/affirmationgratitude',
+                                image:
+                                    'assets/images/affirmation/AffirmationScreenDark.png',
+                              ),
+                              MyProjectDesktop(
+                                url:
+                                    'https://github.com/afemalecoder/affirmationgratitude',
+                                image:
+                                    'assets/images/affirmation/AffirmatonAddDark.png',
+                              ),
+                            ]),
                           ),
                           SizedBox(
                             height: 40,

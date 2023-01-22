@@ -57,6 +57,9 @@ flutter:
     - assets/images/myLogo.jpg
     - assets/images/MyPhoto.jpg
     - assets/images/portfolioImage.png
+    - assets/images/affirmation/HomeScreenDark.png
+    - assets/images/affirmation/AffirmationAddDark.png
+    - assets/images/affirmation/AffirmationScreenDark.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
