@@ -53,37 +53,98 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           SizedBox(
                             height: 40,
                           ),
-                          SingleChildScrollView(
-                            scrollDirection: Axis.horizontal,
-                            child: Row(
-                              children: [
-                              MyProjectDesktop(
-                                url:
-                                    'https://github.com/afemalecoder/affirmationgratitude',
-                                image:
-                                    'assets/images/affirmation/HomeScreenDark.png',
-                              ),
-                              MyProjectDesktop(
-                                url:
-                                    'https://github.com/afemalecoder/affirmationgratitude',
-                                image:
-                                    'assets/images/affirmation/AffirmationScreenDark.png',
-                              ),
-                              MyProjectDesktop(
-                                url:
-                                    'https://github.com/afemalecoder/affirmationgratitude',
-                                image:
-                                    'assets/images/affirmation/AffirmatonAddDark.png',
-                              ),
-                            ]),
+                          SubLabel(label: "GamesFinder"),
+                          MyProjectDesktopGF(),
+                          SubLabel(label: "Affirmation"),
+                          Container(
+                            height: 500,
+                            child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/affirmationgratitude',
+                                    image:
+                                        'assets/images/affirmation/HomeScreenDark.png',
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                  ),
+                                  MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/affirmationgratitude',
+                                    image:
+                                        'assets/images/affirmation/AffirmationScreenDark.png',
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                  ),
+                                  MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/affirmationgratitude',
+                                    image:
+                                        'assets/images/affirmation/AffirmationAddDark.png',
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                  ),
+                                  MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/affirmationgratitude',
+                                    image:
+                                        'assets/images/affirmation/QuoteScreenDark.png',
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                  ),
+                                  MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/affirmationgratitude',
+                                    image:
+                                        'assets/images/affirmation/ProfileScreenDark.png',
+                                  ),
+                                ]),
                           ),
                           SizedBox(
                             height: 40,
                           ),
-                          MyProjectDesktop(
-                            url:
-                                'https://github.com/afemalecoder/portfolioWebsite',
-                            image: 'assets/images/portfolioImage.png',
+                          SubLabel(label: "Portfolio Website"),
+                          Container(
+                            height: 500,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: <Widget>[
+                                MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/portfolio/PortfolioHome.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/portfolio/PortfolioProjects.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/portfolio/PortfolioContact.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectDesktop(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/portfolio/PortfolioDrawer.png'),
+                              ],
+                            ),
                           ),
                         ],
                       ),
@@ -99,17 +160,97 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           SizedBox(
                             height: 40,
                           ),
-                          MyProjectMobile(
-                              url:
-                                  'https://github.com/afemalecoder/affirmationgratitude',
-                              image: 'assets/images/AffirmationGratitude.png'),
+                          SubLabel(label: "GamesFinder"),
+                          MyProjectMobileContainer(),
                           SizedBox(
-                            height: 40,
+                            height: 20,
                           ),
-                          MyProjectMobile(
-                            url:
-                                'https://github.com/afemalecoder/portfolioWebsite',
-                            image: 'assets/images/portfolioImage.png',
+                          SubLabel(label: "Affirmation"),
+                          Container(
+                            height: 400,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: <Widget>[
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/affirmation/HomeScreenDark.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/affirmation/AffirmationScreenDark.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/affirmation/AffirmationAddDark.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/affirmation/QuoteScreenDark.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/affirmation/ProfileScreenDark.png'),
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          SubLabel(label: "Portfolio Website"),
+                          Container(
+                            height: 400,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: <Widget>[
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/portfolio/PortfolioHome.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/portfolio/PortfolioProjects.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/portfolio/PortfolioContact.png'),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                MyProjectMobile(
+                                    url:
+                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                    image:
+                                        'assets/images/portfolio/PortfolioDrawer.png'),
+                              ],
+                            ),
                           ),
                         ],
                       ),

@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -19,9 +20,9 @@ class MyProjectMobile extends StatelessWidget {
       }, // Image tapped
       splashColor: Colors.white10,
       child: Ink.image(
-        fit: BoxFit.cover,
-        width: 300,
-        height: 300,
+        fit: BoxFit.contain,
+        width: 150,
+        height: 400,
         image: AssetImage(
           image,
         ),
@@ -55,4 +56,78 @@ class MyProjectDesktop extends StatelessWidget {
       ),
     );
   }
+}
+
+class MyProjectDesktopGF extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Container(
+      height: 500,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: <Widget>[
+          MyProjectDesktop(
+              url: '', image: 'assets/images/gamesFinder/GameFinderCard.png'),
+          SizedBox(
+            width: 40,
+          ),
+          MyProjectDesktop(
+              url: '',
+              image: 'assets/images/gamesFinder/GamesFinderCardView.png'),
+          SizedBox(
+            width: 40,
+          ),
+          MyProjectDesktop(
+              url: '',
+              image: 'assets/images/gamesFinder/GamesFinderFavorites.png'),
+          SizedBox(
+            width: 40,
+          ),
+          MyProjectDesktop(
+              url: '', image: 'assets/images/gamesFinder/GamesFinderGame.png'),
+        ],
+      ),
+    );
+  }
+}
+
+class MyProjectMobileContainer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 400,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: <Widget>[
+          MyProjectMobile(
+              url: '', image: 'assets/images/gamesFinder/GameFinderCard.png'),
+          SizedBox(
+            width: 20,
+          ),
+          MyProjectMobile(
+              url: '',
+              image: 'assets/images/gamesFinder/GamesFinderCardView.png'),
+          SizedBox(
+            width: 20,
+          ),
+          MyProjectMobile(
+              url: '',
+              image: 'assets/images/gamesFinder/GamesFinderFavorites.png'),
+          SizedBox(
+            width: 20,
+          ),
+          MyProjectMobile(
+              url: '', image: 'assets/images/gamesFinder/GamesFinderGame.png'),
+        ],
+      ),
+    );
+  }
+}
+
+class MyCustomScrollBehavior extends MaterialScrollBehavior {
+  // Override behavior methods and getters like dragDevices
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+        PointerDeviceKind.touch,
+        PointerDeviceKind.mouse,
+      };
 }
