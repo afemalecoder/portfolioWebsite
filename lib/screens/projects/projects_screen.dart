@@ -161,7 +161,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                             height: 40,
                           ),
                           SubLabel(label: "GamesFinder"),
-                          MyProjectMobileContainer(),
+                          MyProjectMobileGF(),
                           SizedBox(
                             height: 20,
                           ),
@@ -173,7 +173,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                               children: <Widget>[
                                 MyProjectMobile(
                                     url:
-                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                        'https://github.com/afemalecoder/affirmationgratitude',
                                     image:
                                         'assets/images/affirmation/HomeScreenDark.png'),
                                 SizedBox(
@@ -181,7 +181,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                                 ),
                                 MyProjectMobile(
                                     url:
-                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                        'https://github.com/afemalecoder/affirmationgratitude',
                                     image:
                                         'assets/images/affirmation/AffirmationScreenDark.png'),
                                 SizedBox(
@@ -189,7 +189,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                                 ),
                                 MyProjectMobile(
                                     url:
-                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                        'https://github.com/afemalecoder/affirmationgratitude',
                                     image:
                                         'assets/images/affirmation/AffirmationAddDark.png'),
                                 SizedBox(
@@ -197,7 +197,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                                 ),
                                 MyProjectMobile(
                                     url:
-                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                        'https://github.com/afemalecoder/affirmationgratitude',
                                     image:
                                         'assets/images/affirmation/QuoteScreenDark.png'),
                                 SizedBox(
@@ -205,7 +205,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                                 ),
                                 MyProjectMobile(
                                     url:
-                                        'https://github.com/afemalecoder/portfolioWebsite',
+                                        'https://github.com/afemalecoder/affirmationgratitude',
                                     image:
                                         'assets/images/affirmation/ProfileScreenDark.png'),
                               ],

@@ -90,7 +90,7 @@ class MyProjectDesktopGF extends StatelessWidget {
   }
 }
 
-class MyProjectMobileContainer extends StatelessWidget {
+class MyProjectMobileGF extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
