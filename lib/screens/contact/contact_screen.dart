@@ -56,6 +56,15 @@ class _ContactScreenState extends State<ContactScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               SocialButton(
+                                url:
+                                    'https://www.linkedin.com/in/matilda-cederberg-901a69252/',
+                                icon: FontAwesomeIcons.linkedin,
+                                label: "LinkedIn profile",
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              SocialButton(
                                 url: 'https://github.com/afemalecoder',
                                 icon: FontAwesomeIcons.github,
                                 label: "GitHub profile",
@@ -108,6 +117,15 @@ class _ContactScreenState extends State<ContactScreen> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              SocialButton(
+                                url:
+                                    'https://www.linkedin.com/in/matilda-cederberg-901a69252/',
+                                icon: FontAwesomeIcons.linkedin,
+                                label: "LinkedIn profile",
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
                               SocialButton(
                                 url: 'https://github.com/afemalecoder',
                                 icon: FontAwesomeIcons.github,
