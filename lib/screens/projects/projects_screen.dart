@@ -33,7 +33,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
           ("It's an app where users can record their gratitude for past and future events, creating a personal journal of positivity. The app also delivers daily motivational quotes for an instant mood boost, with the option to save favourites. With its stunning design, Affirmation Gratitude offers a delightful user experience."),
       type: "Flutter/Dart Application",
       image: 'assets/images/FlutterLogo.jpg',
-      icon: 'assets/images/affirmation/AffirmationAppIcon.png',
+      icon: 'assets/images/affirmation/affirmationIcon.png',
     ),
     ProjectButtonCard(
       url: "https://github.com/afemalecoder/portfolioWebsite",
@@ -42,7 +42,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
           ("Crafted with Flutter/Dart and designed for seamless screen-size responsiveness, my portfolio website is a showcase of my expertise and creativity."),
       type: "Flutter/Dart Web Application",
       image: 'assets/images/FlutterLogo.jpg',
-      icon: 'assets/images/affirmation/AffirmationAppIcon.png',
+      icon: 'assets/images/portfolio/portfolioIcon.png',
     ),
     ProjectButtonCard(
       url: "https://github.com/afemalecoder",
@@ -51,7 +51,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
           ("Habity, is a habit-tracking app integrated with Firebase for user management and data storage. It empowers users to cultivate and monitor their colour-coded habits, bringing organization and productivity to their daily lives. The core feature lies in its habit-tracking capabilities. Users can colour-code their habits, making it simple to track progress and stay motivated."),
       type: "Jetpack Compose",
       image: 'assets/images/jetpackComposeLogo.png',
-      icon: 'assets/images/affirmation/AffirmationAppIcon.png',
+      icon: 'assets/images/habity/habityIcon.png',
     ),
   ];
 
