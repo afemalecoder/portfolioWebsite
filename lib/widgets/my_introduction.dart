@@ -36,38 +36,3 @@ class MyIntroduction extends StatelessWidget {
     );
   }
 }
-
-class SubLabel extends StatelessWidget {
-  const SubLabel({
-    Key? key,
-    required this.label,
-  }) : super(key: key);
-
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    return ResponsiveBuilder(
-      builder: (context, sizingInfo) {
-        double textSize =
-            sizingInfo.deviceScreenType == DeviceScreenType.mobile ? 15 : 30;
-        return Container(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            // mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                label,
-                style: GoogleFonts.anonymousPro(
-                  fontSize: textSize,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ],
-          ),
-        );
-      },
-    );
-  }
-}

@@ -57,19 +57,28 @@ flutter:
     - assets/images/myLogo.jpg
     - assets/images/MyPhoto.jpg
     - assets/images/portfolioImage.png
+    - assets/images/SwiftUiIcon.png
+    - assets/images/FlutterLogo.jpg
+    - assets/images/jetpackComposeLogo.png
     - assets/images/affirmation/HomeScreenDark.png
     - assets/images/affirmation/AffirmationAddDark.png
     - assets/images/affirmation/AffirmationScreenDark.png
     - assets/images/affirmation/QuoteScreenDark.png
     - assets/images/affirmation/ProfileScreenDark.png
+    - assets/images/affirmation/AffirmationAppIcon.png
     - assets/images/gamesFinder/GameFinderCard.png
     - assets/images/gamesFinder/GamesFinderCardView.png
     - assets/images/gamesFinder/GamesFinderFavorites.png
     - assets/images/gamesFinder/GamesFinderGame.png
+    - assets/images/gamesFinder/GameFinderAppIcon.png
     - assets/images/portfolio/PortfolioContact.png
     - assets/images/portfolio/PortfolioDrawer.png
     - assets/images/portfolio/PortfolioHome.png
     - assets/images/portfolio/PortfolioProjects.png
+    - assets/images/habity/HabityLoginScreen.png
+    - assets/images/habity/HabitySignUpScreen.png
+    - assets/images/habity/HabityHabitDetailScreen.png
+    - assets/images/habity/HabityHomeScreen.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

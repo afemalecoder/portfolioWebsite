@@ -8,6 +8,8 @@ import 'package:portfolio_website/widgets/my_photo.dart';
 import 'package:portfolio_website/widgets/drawer/portfolio_drawer.dart';
 import 'package:portfolio_website/widgets/navigation_bar/navigation_top_bar.dart';
 
+import '../../widgets/my_labels.dart';
+
 class HomeView extends StatefulWidget {
   static const routeName = '/home';
 
