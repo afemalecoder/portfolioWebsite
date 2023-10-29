@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_website/core/helpers/layout_helper.dart';
 import 'package:portfolio_website/screens/contact/contact_screen.dart';
 import 'package:portfolio_website/screens/home/home_view.dart';
+import 'package:portfolio_website/screens/projects/gameFinder_project.dart';
 import 'package:portfolio_website/screens/projects/my_projetcts.dart';
 import 'package:portfolio_website/screens/projects/projects_screen.dart';
 import 'package:provider/provider.dart';
@@ -35,6 +36,7 @@ class MatildasPortfolioWeb extends StatelessWidget {
         HomeView.routeName: (context) => HomeView(),
         ContactScreen.routeName: (context) => ContactScreen(),
         ProjectsScreen.routeName: (context) => ProjectsScreen(),
+        GameFinderProject.routeName: (context) => GameFinderProject(),
       },
     );
   }

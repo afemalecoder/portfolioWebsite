@@ -25,7 +25,7 @@ class ProjectButtonCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/gameFinder');
       },
       child: Card(
         elevation: 50,
