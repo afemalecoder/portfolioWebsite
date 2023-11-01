@@ -21,7 +21,7 @@ class _GameFinderProject extends State<GameFinderProject> {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-    const gitHubURL = 'https://github.com/afemalecoder';
+    const gitHubURL = 'https://github.com/afemalecoder/GameFinder';
 
     return ResponsiveBuilder(
       builder: ((context, sizingInformation) => Scaffold(
@@ -65,22 +65,27 @@ class _GameFinderProject extends State<GameFinderProject> {
                                 endIndent: 200.0,
                                 color: Colors.grey.withOpacity(0.3),
                               ),
-                              GestureDetector(
-                                onTap: () async {
-                                  await launch("");
-                                },
-                                child: Card(
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20),
-                                      side: BorderSide(
-                                          width: 2,
-                                          color: Colors.grey.withOpacity(0.3))),
-                                  color: Colors.transparent,
-                                  child: Padding(
-                                    padding: EdgeInsets.all(8),
-                                    child: SizedBox(
-                                        width: 90,
-                                        child: Row(
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () async {
+                                      await launch(gitHubURL);
+                                    },
+                                    child: Card(
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(20),
+                                          side: BorderSide(
+                                              width: 2,
+                                              color: Colors.grey
+                                                  .withOpacity(0.3))),
+                                      color: Colors.transparent,
+                                      child: Padding(
+                                        padding: EdgeInsets.all(8),
+                                        child: SizedBox(
+                                            child: Row(
+                                          mainAxisSize: MainAxisSize.min,
                                           children: [
                                             Icon(
                                               Icons.link,
@@ -88,30 +93,32 @@ class _GameFinderProject extends State<GameFinderProject> {
                                                   Colors.grey.withOpacity(0.6),
                                             ),
                                             CardText(
-                                              label: " GitHub",
+                                              label: " GitHub ",
                                               opacity: 0.6,
                                             ),
                                           ],
                                         )),
+                                      ),
+                                    ),
                                   ),
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () async {
-                                  await launch("");
-                                },
-                                child: Card(
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      side: BorderSide(
-                                          width: 2,
-                                          color: Colors.grey.withOpacity(0.3))),
-                                  color: Colors.transparent,
-                                  child: Padding(
-                                    padding: EdgeInsets.all(10),
-                                    child: SizedBox(
-                                        width: 102,
-                                        child: Row(
+                                  GestureDetector(
+                                    onTap: () async {
+                                      await launch(gitHubURL);
+                                    },
+                                    child: Card(
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(20),
+                                          side: BorderSide(
+                                              width: 2,
+                                              color: Colors.grey
+                                                  .withOpacity(0.3))),
+                                      color: Colors.transparent,
+                                      child: Padding(
+                                        padding: EdgeInsets.all(8),
+                                        child: SizedBox(
+                                            child: Row(
+                                          mainAxisSize: MainAxisSize.min,
                                           children: [
                                             ClipRRect(
                                               borderRadius:
@@ -119,23 +126,25 @@ class _GameFinderProject extends State<GameFinderProject> {
                                                       20), // Image border
                                               child: SizedBox.fromSize(
                                                 size: Size.fromRadius(
-                                                    14), // Image radius
+                                                    12), // Image radius
                                                 child: Image.asset(
                                                   'assets/images/SwiftUiIcon.png',
                                                 ),
                                               ),
                                             ),
                                             CardText(
-                                              label: " SwiftUI",
+                                              label: " SwiftUI ",
                                               opacity: 0.6,
                                             ),
                                           ],
                                         )),
+                                      ),
+                                    ),
                                   ),
-                                ),
+                                ],
                               ),
                               const SizedBox(
-                                height: 40,
+                                height: 20,
                               ),
                               Divider(
                                 color: Colors.grey.withOpacity(0.3),
@@ -158,7 +167,6 @@ class _GameFinderProject extends State<GameFinderProject> {
                                 height: 20,
                               ),
                               Container(
-                                alignment: Alignment.center,
                                 height: 500,
                                 child: ListView(
                                   scrollDirection: Axis.horizontal,
@@ -202,14 +210,152 @@ class _GameFinderProject extends State<GameFinderProject> {
                                 height: 20,
                               ),
                               CardText(
-                                label: "SwiftUI",
+                                label: "iOS Application",
                                 opacity: 0.5,
                               ),
                               const SizedBox(
                                 height: 10,
                               ),
                               Divider(
+                                indent: 100.0,
+                                endIndent: 100.0,
                                 color: Colors.grey.withOpacity(0.3),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () async {
+                                      await launch(gitHubURL);
+                                    },
+                                    child: Card(
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(20),
+                                          side: BorderSide(
+                                              width: 2,
+                                              color: Colors.grey
+                                                  .withOpacity(0.3))),
+                                      color: Colors.transparent,
+                                      child: Padding(
+                                        padding: EdgeInsets.all(6),
+                                        child: SizedBox(
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              Icon(
+                                                Icons.link,
+                                                color: Colors.grey
+                                                    .withOpacity(0.6),
+                                              ),
+                                              CardText(
+                                                label: " GitHub ",
+                                                opacity: 0.6,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      await launch(gitHubURL);
+                                    },
+                                    child: Card(
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(20),
+                                          side: BorderSide(
+                                              width: 2,
+                                              color: Colors.grey
+                                                  .withOpacity(0.3))),
+                                      color: Colors.transparent,
+                                      child: Padding(
+                                        padding: EdgeInsets.all(6),
+                                        child: SizedBox(
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              ClipRRect(
+                                                borderRadius:
+                                                    BorderRadius.circular(
+                                                        20), // Image border
+                                                child: SizedBox.fromSize(
+                                                  size: Size.fromRadius(
+                                                      12), // Image radius
+                                                  child: Image.asset(
+                                                    'assets/images/SwiftUiIcon.png',
+                                                  ),
+                                                ),
+                                              ),
+                                              CardText(
+                                                label: " SwiftUI ",
+                                                opacity: 0.6,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              Divider(
+                                color: Colors.grey.withOpacity(0.3),
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              CardText(
+                                label:
+                                    "A game discovery app, which is a SwiftUI-based project, simplifies the hunt for new games. Users get provided with a stack of cards that they swipe right to like or left to dismiss games, with each card offering an image, synopsis, and genre tag. Users can quickly find and track games they love, making game discovery a breeze.",
+                                opacity: 1,
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              Divider(
+                                color: Colors.grey.withOpacity(0.3),
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              Container(
+                                height: 500,
+                                child: ListView(
+                                  scrollDirection: Axis.horizontal,
+                                  children: <Widget>[
+                                    MyProjectDesktop(
+                                        url: gitHubURL,
+                                        image:
+                                            'assets/images/gamesFinder/GameFinderCard.png'),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    MyProjectDesktop(
+                                        url: gitHubURL,
+                                        image:
+                                            'assets/images/gamesFinder/GamesFinderCardView.png'),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    MyProjectDesktop(
+                                        url: gitHubURL,
+                                        image:
+                                            'assets/images/gamesFinder/GamesFinderFavorites.png'),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    MyProjectDesktop(
+                                        url: gitHubURL,
+                                        image:
+                                            'assets/images/gamesFinder/GamesFinderGame.png'),
+                                  ],
+                                ),
                               ),
                             ],
                           ),
@@ -221,79 +367,6 @@ class _GameFinderProject extends State<GameFinderProject> {
               ),
             ),
           )),
-    );
-  }
-}
-
-class MyProjectDesktopGF extends StatelessWidget {
-  static const gitHubURL = 'https://github.com/afemalecoder';
-
-  Widget build(BuildContext context) {
-    return Container(
-      height: 500,
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        children: <Widget>[
-          MyProjectDesktop(
-              url: gitHubURL,
-              image: 'assets/images/gamesFinder/GameFinderCard.png'),
-          SizedBox(
-            width: 40,
-          ),
-          MyProjectDesktop(
-              url: gitHubURL,
-              image: 'assets/images/gamesFinder/GamesFinderCardView.png'),
-          SizedBox(
-            width: 40,
-          ),
-          MyProjectDesktop(
-              url: gitHubURL,
-              image: 'assets/images/gamesFinder/GamesFinderFavorites.png'),
-          SizedBox(
-            width: 40,
-          ),
-          MyProjectDesktop(
-              url: gitHubURL,
-              image: 'assets/images/gamesFinder/GamesFinderGame.png'),
-        ],
-      ),
-    );
-  }
-}
-
-class MyProjectMobileGF extends StatelessWidget {
-  static const gitHubURL = 'https://github.com/afemalecoder';
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 400,
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        children: <Widget>[
-          MyProjectMobile(
-              url: gitHubURL,
-              image: 'assets/images/gamesFinder/GameFinderCard.png'),
-          SizedBox(
-            width: 20,
-          ),
-          MyProjectMobile(
-              url: gitHubURL,
-              image: 'assets/images/gamesFinder/GamesFinderCardView.png'),
-          SizedBox(
-            width: 20,
-          ),
-          MyProjectMobile(
-              url: gitHubURL,
-              image: 'assets/images/gamesFinder/GamesFinderFavorites.png'),
-          SizedBox(
-            width: 20,
-          ),
-          MyProjectMobile(
-              url: gitHubURL,
-              image: 'assets/images/gamesFinder/GamesFinderGame.png'),
-        ],
-      ),
     );
   }
 }

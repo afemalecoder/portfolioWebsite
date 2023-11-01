@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_website/core/helpers/layout_helper.dart';
 import 'package:portfolio_website/screens/contact/contact_screen.dart';
 import 'package:portfolio_website/screens/home/home_view.dart';
+import 'package:portfolio_website/screens/projects/affirmation_project.dart';
 import 'package:portfolio_website/screens/projects/gameFinder_project.dart';
+import 'package:portfolio_website/screens/projects/habity_projcet.dart';
 import 'package:portfolio_website/screens/projects/my_projetcts.dart';
+import 'package:portfolio_website/screens/projects/portfolio_project.dart';
 import 'package:portfolio_website/screens/projects/projects_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
@@ -37,6 +40,9 @@ class MatildasPortfolioWeb extends StatelessWidget {
         ContactScreen.routeName: (context) => ContactScreen(),
         ProjectsScreen.routeName: (context) => ProjectsScreen(),
         GameFinderProject.routeName: (context) => GameFinderProject(),
+        AffirmationProject.routeName: (context) => AffirmationProject(),
+        PortfolioProject.routeName: (context) => PortfolioProject(),
+        HabityProject.routeName: (context) => HabityProject()
       },
     );
   }

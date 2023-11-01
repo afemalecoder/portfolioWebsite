@@ -23,9 +23,28 @@ class ProjectButtonCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var pathName = "";
+
+    switch (title) {
+      case "GameFinder":
+        pathName = '/gameFinder';
+        break;
+      case "Affirmation":
+        pathName = '/affirmation';
+        break;
+      case "Portfolio":
+        pathName = '/portfolio';
+        break;
+      case "Habity":
+        pathName = '/habity';
+        break;
+      default:
+        break;
+    }
+
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/gameFinder');
+        Navigator.pushNamed(context, pathName);
       },
       child: Card(
         elevation: 50,
